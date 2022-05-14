@@ -1,0 +1,23 @@
+class Animal {
+  constructor(name, type, color) {
+    this.name = name;
+    this.type = type;
+    this.color = color;
+  }
+
+  speak() {
+    console.log(`${this.name} name is bramhan .`);
+     console.log(`${this.type} type is slim.`);
+      console.log(`${this.name} color is black.`);
+  }
+}
+
+class Mamal extends Animal {
+  speak() {
+    super.speak();
+    console.log(`${this.name} moos.`);
+  }
+}
+
+let l = new Mamal('cow');
+l.speak();
